@@ -11,7 +11,7 @@ const ChatComponent = () => {
   const handleChat = async () => {
     try {
       const res = await fetch(
-        `https://rag-main-main.onrender.com/chat?q=${encodeURIComponent(message)}`
+        `https://rag-back-working.onrender.com/chat?q=${encodeURIComponent(message)}`
       );
       const data = await res.json();
       setAnswer(data.answer);
