@@ -16,7 +16,7 @@ const FileUploadComponent = () => {
         const file = el.files.item(0);
         const formData = new FormData();
         formData.append("pdf", file);
-        await fetch("https://rag-main-main.onrender.com/upload/pdf", {
+        await fetch("https://rag-back-working.onrender.com/upload/pdf", {
           method: "POST",
           body: formData,
         });
